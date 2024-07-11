@@ -1,13 +1,13 @@
 import { useParams } from 'react-router-dom';
-
+import Modal from '../../components/Modal/Modal.tsx'
 import { SESSIONS } from '../dummy-sessions.ts';
+import Button from '../../components/Button/Button.tsx';
 
 export default function SessionPage() {
   const params = useParams<{ id: string }>();
 
   const sessionId = params.id;
   const loadedSession = SESSIONS.find((session) => session.id === sessionId);
-
   if (!loadedSession) {
     return (
       <main id="session-page">
@@ -35,12 +35,13 @@ export default function SessionPage() {
               })}
             </time>
             <p>
-              {/* Todo: Add button that opens "Book Session" dialog / modal */}
+              <Button>Book Session</Button>
             </p>
           </div>
         </header>
         <p id="content">{loadedSession.description}</p>
       </article>
+      <Modal></Modal>
     </main>
   );
 }
