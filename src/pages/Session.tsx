@@ -2,10 +2,10 @@ import { useParams } from 'react-router-dom';
 import Modal from '../../components/Modal/Modal.tsx'
 import { SESSIONS } from '../dummy-sessions.ts';
 import Button from '../../components/Button/Button.tsx';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import Input from '../../components/Input/Input.tsx'
 import { useDispatch } from 'react-redux';
-import { addSessions, removeSession } from '../../store/slice.tsx';
+import { addSessions } from '../../store/slice.tsx';
 export default function SessionPage() {
   const dispatch = useDispatch()
   const params = useParams<{ id: string }>();

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import "./Header.css"
 import Button from "../../components/Button/Button"
-import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import Modal from '../Modal/Modal'
 import { useSelector, useDispatch } from 'react-redux'
