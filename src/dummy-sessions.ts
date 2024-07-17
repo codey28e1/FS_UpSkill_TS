@@ -8,6 +8,32 @@ import dataFetching from './assets/sessions/data-fetching.jpg';
 import reactTs from './assets/sessions/react-ts.jpg';
 import performance from './assets/sessions/performance.jpg';
 import dataStore from './assets/sessions/data-store.jpg';
+import { THeroBanner } from '../components/HeroBanner/type';
+export const dummyBannerData: THeroBanner = {
+  heading: 'Unlock your potential',
+  subheading: 'Start now',
+  CTAs: [
+    {
+      content: 'Check it up',
+      isLink: false,
+      //backgroundColorHex: '#ff5722'
+    },
+    {
+      content: 'Buy now',
+      isLink: false,
+      //backgroundColorHex: '#2196f3'
+    },
+    {
+      content: 'Learn more',
+      isLink: true,
+    }
+  ]
+}
+export const CtaBtnMappingColor = [
+  '#007bff',
+  '#6c757d',
+  '#28a745'
+]
 
 export const SESSIONS = [
   {

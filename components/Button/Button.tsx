@@ -1,13 +1,13 @@
 import React, { ComponentPropsWithoutRef, ReactNode } from 'react'
 import { LinkProps } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-type commonType = {
+export type commonType = {
     children: ReactNode,
     textOnly?: boolean,
     activeLink?: boolean
 }
-type Btn = ComponentPropsWithoutRef<"button"> & commonType & {to?: never}
-type Lnk = LinkProps & commonType & {to: string}
+export type Btn = ComponentPropsWithoutRef<"button"> & commonType & {to?: never}
+export type Lnk = LinkProps & commonType & {to: string}
 
 function isLink(
     props: Btn | Lnk,

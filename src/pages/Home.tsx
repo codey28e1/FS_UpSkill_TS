@@ -1,10 +1,12 @@
 import studentsImg from '../assets/students.jpg';
 import listImg from '../assets/list.jpg';
 import certificateImg from '../assets/certificate.jpg';
-
+import HeroBanner from '../../components/HeroBanner/HeroBanner'
+import { dummyBannerData } from '../dummy-sessions';
 export default function HomePage() {
   return (
     <main id="home-page">
+      {<HeroBanner content={dummyBannerData}/>}
       <h2>Our Mission: Your Success</h2>
       <section>
         <img src={studentsImg} alt="A group of students" />
